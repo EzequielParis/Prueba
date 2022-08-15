@@ -1,0 +1,66 @@
+body{
+    background-color: rgb(237,247,237);
+}
+.navbar-brand img{
+    height: 40px;
+}
+.navbar-nav a {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #424242;
+    transition: 0.3s ease-in-out;
+}
+.navbar-nav li a:hover {
+    color: #80bf7e;
+}
+#producto{
+    text-align: center;
+    padding-bottom: 10px;
+    background-color: rgb(237,247,237);
+}
+.thumbnail { 
+    position: relative;
+    display: block; 
+    overflow: hidden;
+    border-radius: 10px;
+}
+.caption { 
+    position: absolute; 
+    top: 83%; 
+    left: 0; 
+    width: 100%; 
+} 
+.producto-body h5{
+    margin-top: 5px;
+}
+.producto-body small{
+    font-size: small;
+    padding-top: 2px;
+    border-top: 1px solid rgba(0, 0, 0, 0.493);
+}
+.caption p{
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.466);
+    height: 35px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+    -ms-transition: opacity 0.4s ease-in;
+    -moz-transition: opacity 0.4s ease-in;
+    -webkit-transition: opacity 0.4s ease-in;
+}
+#producto:hover p{
+    opacity: 2;
+    transition: opacity 0.4s ease-out;
+    -ms-transition: opacity 0.4s ease-out;
+    -moz-transition: opacity 0.4s ease-out;
+    -webkit-transition: opacity 0.4s ease-out;
+}
+#producto img{
+    width: 13rem;
+    height: 13rem;
+    transition: 0.4s;
+    object-fit: cover;
+}
+#producto:hover img{
+    transform: scale(1.1);
+    transition: 0.4s ease-in-out;
+}
